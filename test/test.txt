@@ -1,0 +1,3 @@
+New Edit
+:hello
+Some new content

@@ -1,0 +1,183 @@
+body {
+  /*padding: 50px;*/
+  padding:1rem;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color:#000;
+  text-decoration: none;
+}
+
+.panel {
+  background: yellowgreen;
+  display: block;
+  height:30rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+}
+ul,ol {
+  text-align: left;
+  clear:both;
+  margin-bottom: 2rem;
+}
+img {
+  clear:both;
+  display: block;
+}
+h1 {
+  color:red;
+}
+h2 {
+  color:blue;
+}
+.highlight {
+  color:deeppink;
+}
+@media screen and (min-width:320px) {
+  .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-12 {
+    float:left;
+    margin: 0;
+    padding:0;
+    width: 100%
+  }
+  [class^="col-md-"] {
+    padding: 1rem;
+  }
+  [class^="trigger"] {
+    border-top: 1px solid #CCC;
+    clear:both;
+    display: block;
+    height: 3rem;
+    line-height:2;
+    padding: .2rem 1rem;
+    position: relative;
+    }
+
+    [class^="content"] {
+      display: none;
+  }
+  
+  input[type="checkbox"]:checked ~ [class^="trigger"] ~ [class^="content"] {
+      display: block;
+  }
+  }
+  .trigger::before {
+    border-top:1px solid #CCC;
+    content: "";
+    width: 100%;
+  }
+  .trigger ~ input[type="checkbox"] {
+    clip: inherit;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  nav {
+    display: block;
+    float: none;
+    clear: both;
+    width: auto%;
+  }
+  
+  nav ul, nav li {
+    list-style-type: none;
+    float: none;
+    padding-left:0
+  }
+  
+  nav li a {
+    font-weight: 700;
+    padding: 0;
+  }
+  
+  nav li:nth-child(1n +2)::before {
+    content:none
+  }
+}
+@media screen and (min-width:600px) {
+  .col-md-1 {
+    width: 8.33333333%
+  }
+  .col-md-2 {
+    width: 16.6666667%
+  }
+  .col-md-3 {
+      width: 16.6666667%
+  }
+  .col-md-4 {
+    width: 50%
+  }
+  .col-md-5 {
+    width: 33.333333%
+  }
+  .col-md-6 {
+    width: 100%
+  }
+}
+@media screen and (min-width:768px) {
+  body {
+    margin: 1rem;
+    padding: 50px;
+  }
+  .wrap {
+    flex-direction: row;
+  }
+  .col-md-1 {
+    width: 8.33333333%
+  }
+  .col-md-2 {
+    width: 16.6666667%
+  }
+  .col-md-3 {
+      width: 16.6666667%
+  }
+  .col-md-4 {
+    width: 33.333333%
+  }
+  .col-md-5 {
+    width: 33.333333%
+  }
+  .col-md-6 {
+    width: 50%
+  }
+}
+@media screen and (min-width:1024px) {
+  nav {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+  
+  nav ul, nav li {
+    list-style-type: none;
+    float: left;
+  }
+  
+  nav li a {
+    font-weight: 700;
+    padding: 0 2rem;
+  }
+  
+  nav li:nth-child(1n +2)::before {
+    content:"|";
+  }
+}
+@media screen and (min-width:1240px) {
+  
+}
+
