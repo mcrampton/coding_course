@@ -22,15 +22,8 @@ var router = express.Router();
     target1: '_blank',
     name: req.param('name'),
     username: req.query.usr
-    }),
-    res.render('mypage', {
-      name1: 'Its a bit about my page',
-      title: 'My page Yeh'     
-    });,
-    res.render('newpage', {
-      name1: 'Its a new page',
-      title: 'A new page Hah'     
-    })
+     
+    });
 });
 
 module.exports = router;
