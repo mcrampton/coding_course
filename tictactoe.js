@@ -18,10 +18,10 @@ const game = {
        }
     };
 
-      for (row of game.board) {
-              console.log(row[0] + '|' + row[1] + '|' + row[2]); 
-              console.log('-----')
-          }
+    //   for (row of game.board) {
+    //           console.log(row[0] + '|' + row[1] + '|' + row[2]); 
+    //           console.log('-----')
+    //       }
 
 console.log(game.player2.name + ' ' + game.player2.result)
 console.log(game.player1.name + ' ' + game.player1.result)
