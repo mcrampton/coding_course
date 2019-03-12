@@ -56,3 +56,9 @@ button3.addEventListener('click', () => {
         }
         window.onload = setActive;
 })();
+
+fetch('https://jsonplaceholder.typicode.com/todos/')
+    .then(data => data.json())
+    .then(body => console.log(body[0],body[1]))
+    .catch(err => console.log('Doh!'))
+    console.log('this should happen first');    
